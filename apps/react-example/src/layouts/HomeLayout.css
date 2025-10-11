@@ -1,0 +1,10 @@
+/* HomeLayout.css */
+.home-layout {
+  min-height: 100vh;
+  color: white;
+}
+
+.hero {
+  background: url("/public/img/background.jpg") no-repeat center center/cover;
+  position: relative;
+}

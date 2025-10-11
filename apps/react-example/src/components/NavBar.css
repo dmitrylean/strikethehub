@@ -1,0 +1,183 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  margin-top: 15px;
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.logo span {
+  font-size: 0.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.nav a:hover {
+  color: #1da1f2;
+}
+
+.btn-outline {
+  color: white;
+  background: blue;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.btn-outline:hover {
+  opacity: 0.8;
+  color: black;
+  background: white;
+}
+
+ /* Burger */
+
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  .burger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+  }
+
+  .burger,
+  .close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger img,
+  .close img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 0;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+  .header {
+    padding: 16px 24px;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 1100;
+  }
+
+  .close {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    z-index: 1101;
+  }
+
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: -250px;  
+  height: 100%;
+  width: 250px;
+  background: black;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 60px 20px;
+  transition: right 0.3s ease;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav li {
+    width: 100%;
+  }
+
+  .nav a {
+    font-size: 18px;
+    padding: 10px 0;
+    width: 100%;
+    color: white;
+    display: block; 
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .nav.active ~ .close {
+    display: block;
+  }
+
+  .nav.active ~ .burger {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+}

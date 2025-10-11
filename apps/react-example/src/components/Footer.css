@@ -1,0 +1,41 @@
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer .socials {
+  display: flex;
+  gap: 30px;
+}
+
+.footer .socials a {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer .socials a:hover {
+  color: #ff4d4d;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #666;
+}
+
+.socials svg {
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.socials svg:hover {
+  color: #1da1f2;
+}

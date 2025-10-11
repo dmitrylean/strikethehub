@@ -1,0 +1,46 @@
+[
+  {
+    "img": "/img/works/astroblogportfolio.jpg",
+    "title": "Astro Portfolio & Blog",
+    "detailsTitle": "Astro Portfolio Theme",
+    "description": "A stylish portfolio template with integrated blog functionality, built on Astro.",
+    "stack": "Astro",
+    "demo": "https://dmitryleanblog.netlify.app",
+    "github": "https://github.com/dmitrylean/mainastroportfolio",
+    "icons": [
+      "/svg/astro-svgrepo-com.svg",
+      "/svg/react.svg",
+      "/svg/typescript.svg"
+    ]
+  },
+  {
+    "img": "/img/works/musicartist.jpg",
+    "title": "Creative Artist Template",
+    "detailsTitle": "React Template for Creatives",
+    "description": "A React migrate to Next.js template tailored for musicians, beatmakers, designers, artists, and other creative professionals.",
+    "stack": "React",
+    "demo": "https://nextjs-for-creative.netlify.app",
+    "github": "https://github.com/dmitrylean/creative-template-nextjs",
+    "icons": [
+      "/svg/react.svg",
+      "/svg/nextjs.svg",
+      "/svg/typescript.svg",
+      "/svg/tailwind.svg"
+    ]
+  },
+  {
+    "img": "/img/works/html-projects.jpg",
+    "title": "HTML Projects",
+    "detailsTitle": "HTML to Wordpress",
+    "description": "This repository contains a clean and responsive front-end layout (HTML, CSS, JS) designed to be easily integrated into WordPress.",
+    "stack": "Wordpress",
+    "demo": "https://html-projects-template.netlify.app",
+    "github": "https://github.com/dmitrylean/html-projects",
+    "icons": [
+      "/svg/wordpress.svg",
+      "/svg/html5.svg",
+      "/svg/css3.svg",
+      "/svg/js.svg"
+    ]
+  }
+]
