@@ -1,0 +1,15 @@
+{
+  "homeTitle": "Главная — Strike The Hub",
+  "aboutTitle": "О нас — Strike The Hub",
+  "servicesTitle": "Услуги — Strike The Hub",
+  "newsTitle": "Новости — Strike The Hub",
+  "contactTitle": "Контакты — Strike The Hub",
+  "siteName": "Strike The Hub",
+  "nav": {
+    "home": "Главная",
+    "about": "О нас",
+    "services": "Портфолио",
+    "news": "Новости",
+    "contact": "Контакт"
+  }
+}
