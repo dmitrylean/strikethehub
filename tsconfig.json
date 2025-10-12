@@ -10,8 +10,6 @@
   "references": [
     { "path": "packages/ui" },
     { "path": "packages/utils" },
-    { "path": "apps/codebase" },
-    { "path": "apps/mainportfolio" },
-    { "path": "apps/zloioperator" }
+    { "path": "apps/frontend" }
   ]
 }
