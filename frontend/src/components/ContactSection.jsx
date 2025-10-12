@@ -1,6 +1,13 @@
 // ContactPage.jsx
 import React from "react";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+  FaPhone,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const ContactPage = () => {
   return (
@@ -9,14 +16,15 @@ const ContactPage = () => {
       <section className="bg-black text-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center space-y-4">
           <p className="text-sm text-gray-400">
-            Home > <span className="text-orange-500">Contact us</span>
+            Home <span className="text-orange-500">Contact us</span>
           </p>
 
           <h2 className="text-3xl md:text-4xl font-bold">
             Lorem Ipsum is simply dummy text of the printing and.
           </h2>
           <p className="text-gray-400">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
           </p>
 
           <div className="mt-12 flex justify-center">

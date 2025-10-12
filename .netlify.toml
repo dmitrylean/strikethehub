@@ -1,9 +1,9 @@
 [[build]]
-  base = "apps/codebase"
-  command = "pnpm turbo run build --filter=codebase"
-  publish = "apps/codebase/dist"
+  base = "/frontend"
+  command = "pnpm turbo run build --filter=frontend"
+  publish = "frontend/dist"
 
 [[build]]
-  base = "apps/next-app"
-  command = "pnpm turbo run build --filter=next-app"
-  publish = "apps/next-app/.next"
+  base = "/next"
+  command = "pnpm turbo run build --filter=next"
+  publish = "next/.next"
