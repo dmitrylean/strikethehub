@@ -11,29 +11,32 @@ Implementation of a multi-page portal dedicated to video games in React
 
 ---
 
-**Run:**
+---
+
+# Run and Build Locally
+
+## All Projects at Once
 
 ```bash
-cd react
-npm install
-npm start
+pnpm dev # runs all dev servers in parallel
+pnpm build # builds everything
+```
+
+## Single Project
+
+```bash
+pnpm turbo run dev --filter=astro-app
+pnpm turbo run build --filter=next-app
+```
+
+Check the list of available projects:
+
+```bash
+pnpm list -r
 ```
 
 ---
 
-## 🚀 How to Use
+# Author
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/adamlean/strikethehub.git
-```
-
-2. Pick the folder for your project type.
-3. Run or integrate into your environment.
-
----
-
-## Author
-
-Developed by Adam Lean
+Developed by Dmitry Lean
