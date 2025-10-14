@@ -7,7 +7,7 @@
 
 # About
 
-Implementation of a multi-page portal dedicated to video games in React
+Implementation of a multi-page portal dedicated to video games in React.
 
 ---
 
