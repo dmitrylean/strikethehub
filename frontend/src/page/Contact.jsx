@@ -12,10 +12,7 @@ const Contact = () => {
 
   return (
     <>
-      <Header />
       <ContactSection />
-      <SubscribeSection />
-      <Footer />
     </>
   );
 };

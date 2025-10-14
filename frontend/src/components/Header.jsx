@@ -9,7 +9,7 @@ const Header = () => {
           to="/"
           className="text-white text-2xl font-bold no-underline"
         >
-          MySite
+         StrikeTheHub
         </Link>
 
         <nav className="flex items-center gap-8">

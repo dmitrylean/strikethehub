@@ -12,10 +12,7 @@ const News = () => {
 
   return (
     <>
-      <Header />
       <NewsSection news={newsData} />
-      <SubscribeSection />
-      <Footer />
     </>
   );
 };

@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const games = [
-  { id: 1, img: "/assets/img/game_1.png", followers: 40 },
-  { id: 2, img: "/assets/img/game_2.png", followers: 40 },
-  { id: 3, img: "/assets/img/game_3.png", followers: 40 },
-  { id: 4, img: "/assets/img/game_4.png", followers: 40 },
+  { id: 1, img: "https://media.contentapi.ea.com/content/dam/gin/images/2017/01/bf3-keyart.jpg.adapt.crop1x1.767p.jpg", name: "BattleField" },
+  { id: 2, img: "https://images.gamewatcherstatic.com/image/file/5/ca/70925/cod3.jpg", name: "Call Of Duty" },
+   { id: 4, img: "https://fwmedia.fandomwire.com/wp-content/uploads/2023/09/28042935/Counter-Strike-2.jpg", name: "CS2" },
+  { id: 3, img: "https://cdna.artstation.com/p/assets/images/images/074/305/192/4k/pingle-studio-4.jpg?1711726672", name: "Insurgency Sandstorm" },
 ];
 
 const TrendingGames = () => {
@@ -36,8 +36,8 @@ const TrendingGames = () => {
                 />
               </Link>
               <p className="text-sm font-medium flex items-center justify-center">
-                <i className="fa-solid fa-fire mr-1.5 text-orange-400"></i>
-                {game.followers} Followers
+                <p className="fa-solid fa-fire mr-1.5 text-orange-400"></p>
+                {game.name}
               </p>
             </div>
           ))}

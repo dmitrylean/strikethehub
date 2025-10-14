@@ -59,7 +59,7 @@ const AboutSections = () => {
         <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-10 items-center">
           <div className="flex-shrink-0">
             <img
-              src="/assets/img/about-img.png"
+              src="https://static.vecteezy.com/system/resources/thumbnails/053/695/221/small_2x/a-soldier-in-full-tactical-gear-aiming-an-assault-rifle-free-photo.jpeg"
               alt="About Visual"
               className="w-[400px] rounded-[12px]"
             />
