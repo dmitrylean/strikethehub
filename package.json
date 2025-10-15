@@ -9,6 +9,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev:web": "turbo run dev --filter=frontend",
+    "dev:mobile": "turbo run dev --filter=mobile",
+    "dev:backend": "cd backend && python manage.py runserver",
     "dev": "turbo run dev --parallel",
     "build": "turbo run build",
     "lint": "turbo run lint",
@@ -23,5 +26,9 @@
     "prettier": "^3.6.2",
     "turbo": "^2.5.8",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }

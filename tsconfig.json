@@ -3,7 +3,8 @@
     "baseUrl": ".",
     "paths": {
       "@crash/ui/*": ["packages/ui/src/*"],
-      "@crash/utils/*": ["packages/utils/src/*"]
+      "@crash/utils/*": ["packages/utils/src/*"],
+      "@project/*": ["../shared/*"]
     }
   },
   "files": [],
