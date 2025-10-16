@@ -1,5 +1,5 @@
 // ContactPage.jsx
-import React from "react";
+import React, { useRef } from "react";
 import {
   FaFacebookF,
   FaTwitter,

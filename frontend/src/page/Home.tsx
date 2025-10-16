@@ -1,5 +1,5 @@
 // src/page/About.jsx
-import React from "react";
+import React, { useRef } from "react";
 import Hero from "../components/Hero";
 import TrendingGames from "../components/TrendingGames";
 

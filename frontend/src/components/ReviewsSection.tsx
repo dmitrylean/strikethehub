@@ -1,5 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FaStar, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+
+interface ReviewProps {
+  name: string;
+  location: string;
+  avatar: string;
+  rating: string;
+  text: string;
+}
 
 export default function ReviewsSection() {
   const reviews = [
@@ -8,35 +16,35 @@ export default function ReviewsSection() {
       location: "Warsaw, Poland",
       avatar: "https://i.pravatar.cc/50",
       rating: 4.5,
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     },
     {
       name: "Yessica Christy",
       location: "Shanxi, China",
       avatar: "https://i.pravatar.cc/51",
       rating: 4.5,
-      text: "Lorem Ipsum is simply dummy text of the printing and"
+      text: "Lorem Ipsum is simply dummy text of the printing and",
     },
     {
       name: "Kim Young Jou",
       location: "Seoul, South Korea",
       avatar: "https://i.pravatar.cc/52",
       rating: 4.5,
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    }
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    },
   ];
 
   return (
     <section className="bg-[#1a1a1a] text-white py-16">
       <div className="container mx-auto px-4">
-
         {/* Headline */}
         <div className="text-center mb-12 max-w-2xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Trusted by Thousands of Happy Customer
           </h2>
           <p className="text-gray-400">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum is simply dummy.
           </p>
         </div>
 
@@ -64,13 +72,18 @@ export default function ReviewsSection() {
             </button>
           </div>
         </div>
-
       </div>
     </section>
   );
 }
 
-function ReviewCard({ name, location, avatar, rating, text }) {
+const ReviewCard: FC<ReviewProps> = ({
+  name,
+  location,
+  avatar,
+  rating,
+  text,
+}) => {
   return (
     <div className="flex flex-col justify-between p-6 rounded-lg border bg-[#1e1e1e]">
       <div className="flex items-center justify-between">
@@ -89,4 +102,4 @@ function ReviewCard({ name, location, avatar, rating, text }) {
       <p className="text-gray-300 text-sm mt-4">{text}</p>
     </div>
   );
-}
+};

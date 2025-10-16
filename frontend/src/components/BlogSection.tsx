@@ -1,7 +1,7 @@
-import React from "react";
-import postImage1 from "../assets/img/post-image-1.png";
-import postImage2 from "../assets/img/post-image-2.png";
-import postImage3 from "../assets/img/post-image-3.png";
+import React, { useRef } from "react";
+import postImage1 from "https://static.tildacdn.one/tild3431-3934-4537-b335-646462656633/__2023-04-11__132537.png";
+import postImage2 from "https://cdn.oneesports.gg/cdn-data/2024/07/top_7_shooter_cs_HD2_cover.jpg";
+import postImage3 from "https://i0.wp.com/www.gamesbap.com/wp-content/uploads/2017/05/Best-FPS-Games-for-PC.jpg?fit=1024%2C576&ssl=1";
 
 export default function NewsPage() {
   return (

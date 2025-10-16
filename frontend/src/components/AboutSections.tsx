@@ -1,5 +1,5 @@
 // src/components/AboutSections.jsx
-import React from "react";
+import React, { useRef } from "react";
 
 const AboutSections = () => {
   return (

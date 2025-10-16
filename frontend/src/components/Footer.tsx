@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -20,16 +20,24 @@ const Footer = () => {
           <h4 className="text-lg font-bold mb-4">About us</h4>
           <ul>
             <li className="mb-2">
-              <Link to="/zeux" className="text-gray-300 hover:underline">Zeux</Link>
+              <Link to="/zeux" className="text-gray-300 hover:underline">
+                Zeux
+              </Link>
             </li>
             <li className="mb-2">
-              <Link to="/portfolio" className="text-gray-300 hover:underline">Portfolio</Link>
+              <Link to="/portfolio" className="text-gray-300 hover:underline">
+                Portfolio
+              </Link>
             </li>
             <li className="mb-2">
-              <Link to="/careers" className="text-gray-300 hover:underline">Careers</Link>
+              <Link to="/careers" className="text-gray-300 hover:underline">
+                Careers
+              </Link>
             </li>
             <li className="mb-2">
-              <Link to="/contact" className="text-gray-300 hover:underline">Contact us</Link>
+              <Link to="/contact" className="text-gray-300 hover:underline">
+                Contact us
+              </Link>
             </li>
             <li className="mb-2">
               <a

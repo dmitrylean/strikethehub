@@ -1,36 +1,45 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="bg-black py-5">
       <div className="container mx-auto flex justify-between items-center">
-        <Link
-          to="/"
-          className="text-white text-2xl font-bold no-underline"
-        >
-         StrikeTheHub
+        <Link to="/" className="text-white text-2xl font-bold no-underline">
+          StrikeTheHub
         </Link>
 
         <nav className="flex items-center gap-8">
           <ul className="flex list-none gap-8 m-0 p-0">
             <li>
-              <Link to="/" className="text-white no-underline hover:text-orange-400">
+              <Link
+                to="/"
+                className="text-white no-underline hover:text-orange-400"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about" className="text-white no-underline hover:text-orange-400">
+              <Link
+                to="/about"
+                className="text-white no-underline hover:text-orange-400"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="/services" className="text-white no-underline hover:text-orange-400">
+              <Link
+                to="/services"
+                className="text-white no-underline hover:text-orange-400"
+              >
                 Services
               </Link>
             </li>
             <li>
-              <Link to="/news" className="text-white no-underline hover:text-orange-400">
+              <Link
+                to="/news"
+                className="text-white no-underline hover:text-orange-400"
+              >
                 News
               </Link>
             </li>

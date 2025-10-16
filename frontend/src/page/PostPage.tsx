@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
-import newsData from "../data/news.json"; 
+import newsData from "../data/news.json";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const PostPage = () => {
-  const { id } = useParams(); 
+  const { id } = useParams();
 
   const post = newsData.find((item) => item.id.toString() === id);
 

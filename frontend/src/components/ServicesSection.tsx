@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 const services = [
   { img: "/assets/svg/smartphone 1.svg", title: "Mobile Game Development" },
