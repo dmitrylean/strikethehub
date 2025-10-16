@@ -1,2 +1,0 @@
-# web
-Template for website
