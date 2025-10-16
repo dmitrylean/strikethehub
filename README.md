@@ -11,8 +11,6 @@ Implementation of a multi-page portal dedicated to video games in React.
 
 ---
 
----
-
 # Run and Build Locally
 
 ## All Projects at Once
