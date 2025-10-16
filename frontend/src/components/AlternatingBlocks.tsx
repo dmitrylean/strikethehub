@@ -1,28 +1,47 @@
-import React from "react";
+// src/components/AlternatingBlocks.tsx
+import React, { FC } from "react";
 
-export default function AlternatingBlocks() {
-  const blocks = [
+interface BlockData {
+  title: string;
+  text1: string;
+  text2: string;
+  img: string;
+  reverse: boolean;
+}
+
+interface BlockProps extends BlockData {}
+interface TextPartProps {
+  title: string;
+  text1: string;
+  text2: string;
+}
+
+const AlternatingBlocks: FC = () => {
+  const blocks: BlockData[] = [
     {
       title: "Lorem Ipsum is simply dummy text dummy text",
-      text1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+      text1:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
       text2: "Lorem Ipsum is simply dummy text of the printing industry.",
       img: "../assets/img/game_4.png",
-      reverse: false
+      reverse: false,
     },
     {
       title: "Lorem Ipsum is simply dummy text dummy text",
-      text1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+      text1:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
       text2: "Lorem Ipsum is simply dummy text of the printing industry.",
       img: "../assets/img/game_2.png",
-      reverse: true
+      reverse: true,
     },
     {
       title: "Lorem Ipsum is simply dummy text dummy text",
-      text1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+      text1:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
       text2: "Lorem Ipsum is simply dummy text of the printing industry.",
       img: "../assets/img/game_3.png",
-      reverse: false
-    }
+      reverse: false,
+    },
   ];
 
   return (
@@ -34,21 +53,31 @@ export default function AlternatingBlocks() {
       </div>
     </section>
   );
-}
+};
 
-function Block({ title, text1, text2, img, reverse }) {
+const Block: FC<BlockProps> = ({ title, text1, text2, img, reverse }) => {
   return (
-    <div className={`grid md:grid-cols-2 items-center gap-8 ${reverse ? "md:flex-row-reverse" : ""}`}>
+    <div
+      className={`grid md:grid-cols-2 items-center gap-8 ${
+        reverse ? "md:flex-row-reverse" : ""
+      }`}
+    >
       {!reverse && <TextPart title={title} text1={text1} text2={text2} />}
+
       <div>
-        <img src={img} alt={title} className="w-[496px] h-[489px] object-cover" />
+        <img
+          src={img}
+          alt={title}
+          className="w-[496px] h-[489px] object-cover"
+        />
       </div>
+
       {reverse && <TextPart title={title} text1={text1} text2={text2} />}
     </div>
   );
-}
+};
 
-function TextPart({ title, text1, text2 }) {
+const TextPart: FC<TextPartProps> = ({ title, text1, text2 }) => {
   return (
     <div>
       <h3 className="text-2xl font-bold mb-4">{title}</h3>
@@ -57,4 +86,6 @@ function TextPart({ title, text1, text2 }) {
       <button className="bg-orange-500 text-white px-4 py-2">Read more</button>
     </div>
   );
-}
+};
+
+export default AlternatingBlocks;

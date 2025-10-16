@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+// App.tsx
+import React, { useEffect, FC } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./page/Home";
@@ -11,23 +12,24 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SubscribeSection from "./components/SubscribeSection";
 
-function TitleManager() {
+const titles: Record<string, string> = {
+  "/": "Home - StrikeTheHub",
+  "/about": "About - StrikeTheHub",
+  "/services": "Services - StrikeTheHub",
+  "/news": "News - StrikeTheHub",
+  "/contact": "Contact - StrikeTheHub",
+};
+
+const TitleManager: FC = () => {
   useEffect(() => {
-    const titles = {
-      "/": "Home - StrikeTheHub",
-      "/about": "About - StrikeTheHub",
-      "/services": "Services - StrikeTheHub",
-      "/news": "News - StrikeTheHub",
-      "/contact": "Contact - StrikeTheHub",
-    };
     const path = window.location.pathname || "/";
     document.title = titles[path] || "StrikeTheHub";
   }, []);
 
   return null;
-}
+};
 
-function App() {
+const App: FC = () => {
   return (
     <Router>
       <TitleManager />
@@ -44,6 +46,6 @@ function App() {
       <Footer />
     </Router>
   );
-}
+};
 
 export default App;

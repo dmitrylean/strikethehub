@@ -1,8 +1,20 @@
-import React from "react";
+// src/components/NewsSection.tsx
+import React, { FC } from "react";
 import { Link, useParams } from "react-router-dom";
 
-const NewsSection = ({ news }) => {
-  const { lang } = useParams();
+export interface NewsItem {
+  id: string | number;
+  title: string;
+  excerpt: string;
+  image: string;
+}
+
+interface NewsSectionProps {
+  news: NewsItem[];
+}
+
+const NewsSection: FC<NewsSectionProps> = ({ news }) => {
+  const { lang } = useParams<{ lang?: string }>();
 
   return (
     <section className="bg-black text-white py-16 px-4">
@@ -15,7 +27,10 @@ const NewsSection = ({ news }) => {
               className="rounded-md mb-4"
             />
             <h2 className="text-xl font-bold mb-2">
-              <Link to={`/${lang}/news/${post.id}`} className="hover:text-orange-500">
+              <Link
+                to={`/${lang || "en"}/news/${post.id}`}
+                className="hover:text-orange-500"
+              >
                 {post.title}
               </Link>
             </h2>
